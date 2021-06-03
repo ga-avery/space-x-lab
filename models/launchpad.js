@@ -22,4 +22,6 @@ launchpadSchema.methods.intro = function () {
 
 const Launchpad = mongoose.model('Launchpad', launchpadSchema);
 
+
+
 module.exports = Launchpad;
