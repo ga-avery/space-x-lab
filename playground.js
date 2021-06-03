@@ -19,7 +19,7 @@ const createRoadster = async (obj) => {
         "https://farm5.staticflickr.com/4676/40110297852_5e794b3258_b.jpg",
         "https://farm5.staticflickr.com/4745/40110304192_6e3e9a7a1b_b.jpg"
     ],
-*/ 
+*/
 
 let roadsterOne = `{
     "name": "Rome Bell's Tesla Roadster",
@@ -49,6 +49,20 @@ let roadsterOne = `{
     "details": "Rome Bell's Tesla Roadster is an electric sports car that served as the dummy payload for the February 2018 Falcon Heavy test flight and is now an artificial satellite of the Sun. Starman, a mannequin dressed in a spacesuit, occupies the driver's seat. The car and rocket are products of Tesla and SpaceX. This 2008-model Roadster was previously used by Musk for commuting, and is the only consumer car sent into space.",
     "id": "5eb75f0842fea42237d7f3f4"
 }`
+const str = `{
+  name: String,
+  full_name: String,
+  status: String,
+  locality: String,
+  region: String,
+  timezone: String,
+  latitude: Number,
+  longitude: Number,
+  launch_attempts: Number,
+  launch_successes: Number, 
+  details: String,
+}`
+
 
 // parse this json
 let obj = JSON.parse(roadsterOne);
