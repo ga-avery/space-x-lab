@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Launchpad = require('./models/launchpad');
 
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 80;
 app.set('json spaces', 2);
 
 // MIDDLEWARE
@@ -79,6 +79,11 @@ app.get('/launchpad/name/:name', async (rq, rs) => {
   } catch (error) {
     console.log('intentional error', error);
   }
+});
+
+app.put('/', async (rq, rs) => {
+  console.log(rq.body);
+  rs.redirect(200, '/');
 })
 
 app.listen(PORT, () => {
